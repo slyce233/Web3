@@ -43,7 +43,7 @@ w3 = Web3(
     Web3.HTTPProvider("https://rinkeby.infura.io/v3/1e4f9967ed4746c6bfeca99b110424f9")
 )
 chain_id = 4
-address = ""
+address = "0x499c73344f19F4319494Ec8206B1eC65245559e1"
 private_key = os.getenv("PRIVATE_KEY")
 
 # create contract
