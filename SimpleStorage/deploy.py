@@ -38,7 +38,7 @@ bytecode = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["evm"
 # get abi
 abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 
-# connect to ganache
+# connect to network
 w3 = Web3(
     Web3.HTTPProvider("https://rinkeby.infura.io/v3/1e4f9967ed4746c6bfeca99b110424f9")
 )
