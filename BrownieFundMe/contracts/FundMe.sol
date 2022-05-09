@@ -50,6 +50,14 @@ contract FundMe {
         return ethAmountInUsd;
     }
 
+      function getEntranceFee() public view returns (uint256) {
+        //minUSD
+        uint256 minUSD = 50 * 10**18;
+        uint256 price = getPrice();
+        uint256 precission = 1 * 10**18;
+        return (minUSD * precission) /price;
+    }
+
     // modifier changes the behaviour of a function
     modifier onlyOwner {
         // _; // run everything under line below
